@@ -8,11 +8,13 @@ function countdown() {
         mins = document.getElementById("time").value;
         secs = mins * 60;
         interval = setInterval(Timedown, 1000);
+        document.querySelector('input.btn').disabled = true;
 
 	} else if (cur_session == 'break') {
         mins = 5;
         secs = mins * 60;
-		interval = setInterval(Timedown, 1000);
+        interval = setInterval(Timedown, 1000);
+        document.querySelector('input.btn').disabled = false;
 	} 	
 }
 
