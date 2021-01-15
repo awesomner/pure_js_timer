@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="timer.js"></script>
+</head>
+
+<body class="gradient_grey">
+    <div class="navbar">
+        <p>Made by 
+        <a href="https://github.com/awesomner" target="_blank" rel="noopener noreferrer">Awesomner</a></p>
+    </div>
+    <div id="title">
+        <h1>
+            Session
+        </h1>
+</div>
+	<div id="timer" class="clock">
+		<div class="clock-text">
+            <div id="minutes"><h1>00</h1></div>
+            <p class="clock-text">:</p> 
+			<div id="seconds"><h1>00</h1></div> 
+		</div>
+	</div>
+	<div class="container">
+        <div id="finished_sessions"><p>Session number: 0/4</p></div>
+        <div>
+            <input type="button" name="start" value="Start" class="btn" onclick="countdown()"><br>
+            <label for="time">Number of minutes:</label>
+            <input type="number" id="time" name="time" value="25" min="0" max="60" step="1"/>
+        </div>
+
+	</div>
+	
+</body>
+
+</html>
