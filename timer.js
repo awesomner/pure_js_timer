@@ -30,8 +30,8 @@ function Timedown() {
     }
     
     if (mins < 0) {
-        m.innerHTML = '<h1>' + 0 + '</h1>';
-        s.innerHTML = '<h1>' + 0 + '</h1>';
+        m.innerHTML = '<h1>' + 00 + '</h1>';
+        s.innerHTML = '<h1>' + 00 + '</h1>';
         if (cur_session == 'session') {
             cur_session = 'break';
             finished_sesions++;
